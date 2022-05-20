@@ -7,11 +7,4 @@ pipeline {
       }
     }
   }
-  stages {
-    stage('Test image') {
-      steps {
-        sh 'docker run -d --name testhelloworld'
-      }
-    }
-  }
 }
