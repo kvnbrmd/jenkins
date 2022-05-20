@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('init') {
       steps {
-        sh 'echo "hello-world"'
+        sh 'docker build -t my_server:latest - < Dockerfile'
       }
     }
   }
